@@ -3,7 +3,7 @@
 
 		<h1>Editing Book</h1>
 
-    <%= render 'layouts/error', obj: @book %>
+    <%= render 'layouts/errors', obj: @book %>
 
 		<%= render "books/newform", book: @book %>
 		<%= link_to "Show", book_path(@book), class: "book_#{@book.id}" %>
