@@ -26,6 +26,9 @@
   <% end %>
 <% end %>
 <!-- フォローボタン -->
+<% if current_user != user %>
+  <%= link_to 'chatを始める', chat_path(user.id) %>
+<% end %>
 <% if user == current_user %>
   <div class="row">
 	  <%= link_to '', edit_user_path(user), class: "col-xs-12 btn btn-default glyphicon glyphicon-wrench edit_user_#{user.id}" %>
