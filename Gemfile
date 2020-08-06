@@ -70,3 +70,5 @@ gem 'bootstrap-sass'
 
 gem 'jp_prefecture'
 gem 'dotenv-rails'
+
+gem 'whenever'
